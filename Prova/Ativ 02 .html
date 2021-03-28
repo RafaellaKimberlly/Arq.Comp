@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css02.css">
+
+    <title>Ativ 02</title>
+</head>
+<body class="body">
+
+    <h1 class="text01">Calculadora Númerica</h1>
+
+    <img src="hexa_02.jpg" alt="Tabela_conversão" class="tab_hex">
+
+    <br>
+
+    <div class="inp_desc"><h2 class="text01">Decimal</h2> 
+    
+    <input id="demo1" type="text" placeholder="Digite o valor decimal"></div>
+
+    <br> <br>
+
+    <div class="inp_oct"><h3 class="text01">Converter para:</h3>
+<input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+
+<br>
+
+<div class="demo02" style="display: none;" id="demo2"></div>
+<br><br>
+
+<input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+
+<br>
+
+<div class="demo03" style="display: none;" id="demo3"></div>
+<br><br>
+
+<input onclick="aparecer_bin()" type="checkbox"><b>Bínario</b>
+
+<br>
+
+<div class="demo04" style="display: none;" id="demo4"></div>
+<br><br>
+
+<button onclick="converter()" class="but">Converter</button>
+
+</div>
+    
+<br><br>
+
+</body>
+</html>
+
+<script>
+
+    function converter(){
+        var decimal = Number (demo1.value);
+
+        let octal = decimal.toString(8);
+        let hexadecimal = decimal.toString(16);
+        let binario = decimal.toString(2);
+
+        console.log(decimal);
+        console.log(octal);
+        console.log(hexadecimal);
+        console.log(binario);
+
+        document.getElementById("demo1").innerHTML = `${decimal}`;
+        document.getElementById("demo2").innerHTML = `${octal}`;
+        document.getElementById("demo3").innerHTML = `${hexadecimal}`;
+        document.getElementById("demo4").innerHTML = `${binario}`;
+
+    }
+
+    function aparecer_bin(){
+        demo4.style.display = 'block'
+    }
+
+    function aparecer_hexa(){
+        demo3.style.display = 'block'
+    }
+
+    function aparecer_octal(){
+        demo2.style.display = 'block'
+    }
+
+    document.bgColor = "#FFC0CB";
+</script>

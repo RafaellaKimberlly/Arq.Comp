@@ -1,0 +1,52 @@
+.body{
+    background-color: pink;
+    margin-left: 500px;
+}
+
+.tab_hex{
+    margin-right: 50px;
+    width: 430px;
+}
+
+.text01{
+    color: rgb(92, 5, 5);
+}
+
+.demo02{
+    background-color: rgb(241, 234, 234);
+     border-radius: 5px; 
+     color: rgb(104, 15, 5); 
+     width: 15%; 
+     height: 40px; 
+     font-weight: 500;
+}
+
+.demo03{
+    background-color: rgb(241, 234, 234);
+     border-radius: 5px; 
+     color: rgb(104, 15, 5); 
+     width: 15%; 
+     height: 40px; 
+     font-weight: 500;
+}
+
+.demo04{
+    background-color: rgb(241, 234, 234);
+     border-radius: 5px; 
+     color: rgb(104, 15, 5); 
+     width: 15%; 
+     height: 40px; 
+     font-weight: 500;
+}
+
+.but{
+    background-color: rgb(104, 15, 5);
+}
+
+.inp_desc{
+    margin-left: 100px;
+}
+
+.inp_oct{
+    margin-left: 100px;
+}
